@@ -18,6 +18,9 @@
 #include <log4cxx/logstring.h>
 #include <log4cxx/helpers/outputstream.h>
 #include <stdexcept>
+#ifdef LOG4CXX_MULTI_PROCESS
+#include <apr_file_io.h>
+#endif
 
 using namespace log4cxx;
 using namespace log4cxx::helpers;

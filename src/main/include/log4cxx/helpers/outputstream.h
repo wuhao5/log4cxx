@@ -19,9 +19,10 @@
 #define _LOG4CXX_HELPERS_OUTPUTSTREAM_H
 
 #include <log4cxx/helpers/objectimpl.h>
-#ifdef LOG4CXX_MULTI_PROCESS
-#include <apr_file_io.h>
-#endif
+
+extern "C" {
+    struct apr_file_t;
+}
 
 namespace log4cxx
 {

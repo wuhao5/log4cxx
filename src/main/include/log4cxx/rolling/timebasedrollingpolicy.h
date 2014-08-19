@@ -24,8 +24,12 @@
 #include <log4cxx/rolling/triggeringpolicy.h>
 #include <log4cxx/writerappender.h>
 #include <log4cxx/helpers/outputstream.h>
-#include <apr_mmap.h>
 
+extern "C" {
+    typedef struct apr_mmap_t apr_mmap_t;
+    typedef struct apr_file_t apr_file_t;
+}
+ 
 namespace log4cxx {
 
     namespace rolling {

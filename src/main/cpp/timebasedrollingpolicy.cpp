@@ -39,6 +39,7 @@
 #endif
 
 #include <apr_time.h>
+#include <apr_mmap.h>
 
 using namespace log4cxx;
 using namespace log4cxx::rolling;
